@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Wedsite</title>
+  <link rel="stylesheet" href="/css_main/style.css">
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://uhchat.net/code.php?f=11958b"></script>
+</head>
+
+<body>
+
+  <section id="Home">
+    <nav>
+      <div class="logo">
+        <img src="image/logo.png">
+      </div>
+
+      <ul>
+        <li><a href="http://127.0.0.1:5500/Food%20Wedsite/index.html" onclick="location">Home</a></li>
+        <li><a href="http://127.0.0.1:5500/Food%20Wedsite/views/about/about.html" onclick="location">About</a></li>
+        <li><a href="http://127.0.0.1:5500/Food%20Wedsite/index.html#Menu" onclick="location">Menu</a>
+          <ul class="sub-menu">
+            <li><a href="http://127.0.0.1:5500/Food%20Wedsite/views/all%20products/index.html" onclick="location">All
+                Products</a></li>
+            <li><a href="#Menu">Flash Sale</a></li>
+          </ul>
+        </li>
+        <li><a href="#Gallary">Gallary</a></li>
+        <li><a href="#Review">Review</a></li>
+        <li><a href="http://127.0.0.1:5500/Food%20Wedsite/views/order/order.html" onclick="location">Order</a></li>
+      </ul>
+
+      <div class="icon">
+        <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+        <div id="searchBox" class="search-box">
+          <input type="text" id="searchInput" placeholder="Search...">
+          <i class="fa-solid fa-xmark" id="clearSearch"></i>
+        </div>
+        <i class="fa-solid fa-heart"></i>
+        <a href="http://127.0.0.1:5500/Food%20Wedsite/views/shopping%20cart/index.html" onclick="location"><i
+            class="fa-solid fa-cart-shopping"></i></a>
+        <i class="fa-regular fa-circle-user">
+          <ul class="account">
+            <li><a href="http://127.0.0.1:5500/Food%20Wedsite/views/form/login/login.html" onclick="location"><i
+                  class="fa-solid fa-user"></i>Log in</a></li>
+            <li><a href="http://127.0.0.1:5500/Food%20Wedsite/views/form/register/register.html" onclick="location"><i
+                  class="fa-regular fa-square-plus"></i>Register</a></li>
+          </ul>
+        </i>
+      </div>
+    </nav>
+
+
+    <!--Slider-->
+    <div class="slider">
+      <div class="slider-wrapper">
+        <i class="fa fa-angle-left slider-prev"></i>
+
+        <div class="slider-main">
+          <div class="slider-item">
+            <img src="image/slider_food1.jpg" alt="">
+          </div>
+          <div class="slider-item">
+            <img src="image/slider_food2.jpg" alt="">
+          </div>
+          <div class="slider-item">
+            <img src="image/slider_food3.jpg" alt="">
+          </div>
+        </div>
+
+        <i class="fa fa-angle-right slider-next"></i>
+      </div>
+
+      <ul class="slider-dots">
+        <li class="slider-dot-item active" data-index="0"></li>
+        <li class="slider-dot-item" data-index="1"></li>
+        <li class="slider-dot-item" data-index="2"></li>
+      </ul>
+    </div>
+
+
+
+    <!-- Audio tự động phát -->
+    <div class="audio-player">
+      <video controls autoplay muted width="800" style="border-radius:12px; background:#fff;">
+        <source src="audio/video.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video.
+      </video>
+    </div>
+
+
+    <!--Main-->
+    <div class="main">
+
+      <div class="men_text">
+        <h1>Get Fresh<span>Food</span><br>in a Easy Way</h1>
+      </div>
+
+      <div class="main_image">
+        <img src="image/main_img.png">
+      </div>
+
+    </div>
+
+    <p>
+      Chào mừng bạn đến với Food điểm đến lý tưởng cho những tín đồ đam mê thức ăn nhanh!
+      Chúng tôi chuyên phục vụ các món ăn hấp dẫn như burger, gà rán, khoai tây chiên, pizza
+      và nhiều món ăn vặt thơm ngon khác. Với nguyên liệu tươi ngon, chế biến nhanh chóng và
+      hương vị đậm đà, chúng tôi cam kết mang đến trải nghiệm ẩm thực tuyệt vời cho bạn.
+      Đặt hàng ngay hôm nay để tận hưởng những món ăn ngon miệng và dịch vụ giao hàng nhanh chóng!
+    </p>
+
+    <div class="main_btn">
+      <a href="http://127.0.0.1:5500/Food%20Wedsite/views/order/order.html" onclick="location">Order Now</a>
+      <i class="fa-solid fa-angle-right"></i>
+    </div>
+
+  </section>
+
+
+
+  <!--About-->
+
+  <div class="about" id="About">
+    <div class="about_main">
+
+      <div class="image">
+        <img src="image/Food-Plate.png">
+      </div>
+
+      <div class="about_text">
+        <h1><span>About</span>Us</h1>
+        <h3>Why Choose us?</h3>
+        <p>
+          Chúng tôi cung cấp nhiều món ăn nhanh hấp dẫn như burger, gà rán, khoai tây chiên, pizza
+          và nhiều hơn nữa, đáp ứng mọi khẩu vị.Nguyên liệu tươi ngon, chế biến sạch sẽ, đảm bảo hương vị
+          tuyệt vời trong từng món ăn.Dịch vụ vận chuyển siêu tốc, giúp bạn có bữa ăn nóng hổi chỉ trong
+          thời gian ngắn.Món ngon với mức giá phải chăng, kèm theo nhiều ưu đãi hấp dẫn.Đội ngũ
+          nhân viên thân thiện, sẵn sàng hỗ trợ và mang đến trải nghiệm tuyệt vời nhất cho bạn.
+        </p>
+      </div>
+
+    </div>
+
+    <a href="http://127.0.0.1:5500/Food%20Wedsite/views/order/order.html" onclick="location" class="about_btn">Oder
+      Now</a>
+  </div>
+
+  <!--Menu-->
+
+  <div class="menu" id="Menu">
+    <h1>Our<span>Menu</span></h1>
+
+    <div class="menu_box">
+      <div class="menu_card">
+
+        <div class="menu_image">
+          <img src="image/buger.jpg">
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="menu_info">
+          <h2>Buger</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quia necessitatibus
+          </p>
+          <h3>$20.00</h3>
+          <div class="menu_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <a href="http://127.0.0.1:5500/Food%20Wedsite/views/add%20food/index.html" onclick="location"
+            class="menu_btn">Order Now</a>
+        </div>
+
+      </div>
+
+      <div class="menu_card">
+
+        <div class="menu_image">
+          <img src="image/pasta.jpg">
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="menu_info">
+          <h2>Pasta</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quia necessitatibus
+          </p>
+          <h3>$20.00</h3>
+          <div class="menu_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <a href="http://127.0.0.1:5500/Food%20Wedsite/views/add%20food%20copy%202/index.html" onclick="location"
+            class="menu_btn">Order Now</a>
+        </div>
+
+      </div>
+
+      <div class="menu_card">
+
+        <div class="menu_image">
+          <img src="image/lasagna.webp">
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="menu_info">
+          <h2>Lasagna</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quia necessitatibus
+          </p>
+          <h3>$20.00</h3>
+          <div class="menu_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <a href="http://127.0.0.1:5500/Food%20Wedsite/views/add%20food%20copy%203/index.html" onclick="location"
+            class="menu_btn">Order Now</a>
+        </div>
+
+      </div>
+
+      <div class="menu_card">
+
+        <div class="menu_image">
+          <img src="image/chocolate_Drink.jpg">
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="menu_info">
+          <h2>Drink</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quia necessitatibus
+          </p>
+          <h3>$20.00</h3>
+          <div class="menu_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <a href="http://127.0.0.1:5500/Food%20Wedsite/views/order/order.html" onclick="location"
+            class="menu_btn">Order Now</a>
+        </div>
+
+      </div>
+
+      <div class="menu_card">
+
+        <div class="menu_image">
+          <img src="image/pizza.jpg">
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="menu_info">
+          <h2>Pizza</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quia necessitatibus
+          </p>
+          <h3>$20.00</h3>
+          <div class="menu_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <a href="http://127.0.0.1:5500/Food%20Wedsite/views/add%20food%20copy%204/index.html" onclick="location"
+            class="menu_btn">Order Now</a>
+        </div>
+
+      </div>
+
+      <div class="menu_card">
+
+        <div class="menu_image">
+          <img src="image/Hot_dog.jpg">
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="menu_info">
+          <h2>Hot Dog</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quia necessitatibus
+          </p>
+          <h3>$20.00</h3>
+          <div class="menu_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <a href="http://127.0.0.1:5500/Food%20Wedsite/views/add%20food%20copy%205/index.html" onclick="location"
+            class="menu_btn">Order Now</a>
+        </div>
+
+      </div>
+
+      <div class="menu_card">
+
+        <div class="menu_image">
+          <img src="image/juse.jpg">
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="menu_info">
+          <h2>Juse</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quia necessitatibus
+          </p>
+          <h3>$20.00</h3>
+          <div class="menu_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <a href="http://127.0.0.1:5500/Food%20Wedsite/views/order/order.html" onclick="location"
+            class="menu_btn">Order Now</a>
+        </div>
+
+      </div>
+
+      <div class="menu_card">
+
+        <div class="menu_image">
+          <img src="image/biryani.webp">
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="menu_info">
+          <h2>Biryani</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quia necessitatibus
+          </p>
+          <h3>$20.00</h3>
+          <div class="menu_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <a href="http://127.0.0.1:5500/Food%20Wedsite/views/order/order.html" onclick="location"
+            class="menu_btn">Order Now</a>
+        </div>
+
+      </div>
+
+      <div class="menu_card">
+
+        <div class="menu_image">
+          <img src="image/chocolate.jpg">
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="menu_info">
+          <h2>Chocolate</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quia necessitatibus
+          </p>
+          <h3>$20.00</h3>
+          <div class="menu_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <a href="http://127.0.0.1:5500/Food%20Wedsite/views/add%20food%20copy%206/index.html" onclick="location"
+            class="menu_btn">Order Now</a>
+        </div>
+
+      </div>
+
+      <div class="menu_card">
+
+        <div class="menu_image">
+          <img src="image/ice_cream.jpg">
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="menu_info">
+          <h2>Ice Cream</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quia necessitatibus
+          </p>
+          <h3>$20.00</h3>
+          <div class="menu_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <a href="http://127.0.0.1:5500/Food%20Wedsite/views/order/order.html" onclick="location"
+            class="menu_btn">Order Now</a>
+        </div>
+
+      </div>
+
+      <div class="menu_card">
+
+        <div class="menu_image">
+          <img src="image/Spanchi.jpg">
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="menu_info">
+          <h2>Spanchi</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quia necessitatibus
+          </p>
+          <h3>$20.00</h3>
+          <div class="menu_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <a href="http://127.0.0.1:5500/Food%20Wedsite/views/add%20food%20copy%207/index.html" onclick="location"
+            class="menu_btn">Order Now</a>
+        </div>
+
+      </div>
+
+      <div class="menu_card">
+
+        <div class="menu_image">
+          <img src="image/sandwich.jpg">
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="menu_info">
+          <h2>Sandwich</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quia necessitatibus
+          </p>
+          <h3>$20.00</h3>
+          <div class="menu_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <a href="http://127.0.0.1:5500/Food%20Wedsite/views/order/order.html" onclick="location"
+            class="menu_btn">Order Now</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!--Review-->
+  <div class="review" id="Review">
+    <h1>Customer<span>Review</span></h1>
+
+    <div class="review_box">
+      <div class="review_card">
+
+        <div class="review_profile">
+          <img src="image/review_1.png">
+        </div>
+
+        <div class="review_text">
+          <h2 class="name">Cám</h2>
+
+          <div class="review_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+
+          <div class="review_social">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deserunt esse
+            repudiandae ipsam iusto adipisci dolorum provident aut suscipit culpa!
+            Officiis ducimus provident iusto dolorem ullam mollitia, illo quasi consectetur. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Eaque sed, cum cumque fuga fugiat
+            molestias quia magni saepe incidunt velit illum eos voluptas perspiciatis eligendi
+            magnam, eveniet, alias error rerum!
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="review_card">
+
+        <div class="review_profile">
+          <img src="image/review_2.png">
+        </div>
+
+        <div class="review_text">
+          <h2 class="name">Tèo</h2>
+
+          <div class="review_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+
+          <div class="review_social">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deserunt esse
+            repudiandae ipsam iusto adipisci dolorum provident aut suscipit culpa!
+            Officiis ducimus provident iusto dolorem ullam mollitia, illo quasi consectetur. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Eaque sed, cum cumque fuga fugiat
+            molestias quia magni saepe incidunt velit illum eos voluptas perspiciatis eligendi
+            magnam, eveniet, alias error rerum!
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="review_card">
+
+        <div class="review_profile">
+          <img src="image/review_3.png">
+        </div>
+
+        <div class="review_text">
+          <h2 class="name">Thị Nở</h2>
+
+          <div class="review_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+
+          <div class="review_social">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deserunt esse
+            repudiandae ipsam iusto adipisci dolorum provident aut suscipit culpa!
+            Officiis ducimus provident iusto dolorem ullam mollitia, illo quasi consectetur. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Eaque sed, cum cumque fuga fugiat
+            molestias quia magni saepe incidunt velit illum eos voluptas perspiciatis eligendi
+            magnam, eveniet, alias error rerum!
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="review_card">
+
+        <div class="review_profile">
+          <img src="image/review_4.png">
+        </div>
+
+        <div class="review_text">
+          <h2 class="name">Tũn</h2>
+
+          <div class="review_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+
+          <div class="review_social">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deserunt esse
+            repudiandae ipsam iusto adipisci dolorum provident aut suscipit culpa!
+            Officiis ducimus provident iusto dolorem ullam mollitia, illo quasi consectetur. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Eaque sed, cum cumque fuga fugiat
+            molestias quia magni saepe incidunt velit illum eos voluptas perspiciatis eligendi
+            magnam, eveniet, alias error rerum!
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+  <!--Order-->
+
+  <!-- Order Section -->
+  <div class="order" id="Order">
+    <h1><span>Order</span> Now</h1>
+
+    <div class="order_main">
+
+      <div class="order_image">
+        <img src="image/order_image.png" alt="Order Image">
+      </div>
+
+      <form id="orderForm">
+
+        <div class="input">
+          <p>Name</p>
+          <input type="text" name="name" placeholder="Your name" required>
+        </div>
+
+        <div class="input">
+          <p>Email</p>
+          <input type="email" name="email" placeholder="Your email" required>
+        </div>
+
+        <div class="input">
+          <p>Phone Number</p>
+          <input type="tel" name="number" placeholder="Your number" required>
+        </div>
+
+        <div class="input">
+          <p>How Many</p>
+          <input type="number" name="quantity" placeholder="How many orders" min="1" required>
+        </div>
+
+        <div class="input">
+          <p>Your Order</p>
+          <input type="text" name="order" placeholder="Food name" required>
+        </div>
+
+        <div class="input">
+          <p>Address</p>
+          <input type="text" name="address" placeholder="Your address" required>
+        </div>
+
+        <!-- Button không dùng submit để không reload trang -->
+        <button type="button" class="order_btn" onclick="submitOrder()">Order Now</button>
+
+      </form>
+
+    </div>
+  </div>
+
+  <!--Footer-->
+
+  <footer>
+    <div class="footer_main">
+
+      <div class="footer_tag">
+        <h2>Quick Link</h2>
+        <p>Home</p>
+        <p>About</p>
+        <p>Menu</p>
+        <p>Gallary</p>
+        <p>Order</p>
+      </div>
+
+      <div class="footer_tag">
+        <h2>Contact</h2>
+        <p>078 957 8318</p>
+        <p>tranxuanson9423@gmail.com</p>
+      </div>
+
+      <div class="footer_tag">
+        <h2>Follows</h2>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+
+      <div class="footer_tag">
+        <h2>Contact Address</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.776727175611!2d106.61393077536015!3d10.82839128932361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b30bb92d8f3%3A0xb5b5df1087c172b9!2zMTY1LzIwIFBoYW4gVsSDbiBI4bubbiwgVMOibiBUaOG7m2kgTmjhuqV0LCBRdeG6rW4gMTIsIEjhu5MgQ2jDrSBNaW5oIDEwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1740361440013!5m2!1svi!2s"
+          width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+
+    </div>
+
+    <p class="end">Design by<span><i class="fa-solid fa-hippo"></i></span> Tran Xuan Sown</p>
+
+  </footer>
+
+
+
+</body>
+
+</html>
